@@ -32,7 +32,9 @@ public class Task {
     }
 
     public void setTaskName(String taskName) {
-        this.taskName = taskName;
+        if(taskName!=null && !"".equals(taskName)){
+            this.taskName = taskName;
+        }
     }
 
     public void setCompleted(boolean completed) {
